@@ -2,41 +2,47 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="CadastroCliente.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="CadastroCliente.css">
 </head>
 
 <body>
- <header>
-      <nav>
-            <img src="/logo/logo.png" alt="LOGO" class="logo" />
-        <ul>
-          <li><a href="home.html">Início</a></li>
-          <li><a href="#saude">Saúde</a></li>
-          <li><a href="#">Especialidades dos médicos</a></li>
-          <li><a href="#">Serviços e Vacinas</a></li>
-        </ul>
-        <div class="botoes">
-          <button>Cadastre-se</button>
-          <button>Login</button>
+  <header>
+    <nav>
+      <img src="/logo/logo-fundo-transparente.svg" alt="LOGO" class="logo" />
+      <ul>
+        <li><a href="home.html">Início</a></li>
+        <li><a href="#saude">Saúde</a></li>
+        <li><a href="#">Especialidades dos médicos</a></li>
+        <li><a href="#">Serviços e Vacinas</a></li>
+      </ul>
+       <div id="div-botoes">
+          <button class="botoes" onclick="window.location.href='CadastroCliente.html'">Login</button>
+          <button class="botoes">NDA</button>
         </div>
-      </nav>
-    </header>
+    </nav>
+  </header>
 
-    <main id="container-principal">
-        <div class="container-form">
-               <form>
-            <label> Digite seu nome completo</label>
-            <div><input type="text" placeholder="Nome Completo"></div>
-            <label> Digite seu E-mail</label></div>
-            <div><input type="text" placeholder="E-mail"></div>
-            <label> Digite sua Senha</label>
-            <div></div><input type="password" placeholder="Senha"></div>
-            </form>
+  <main id="container-principal">
+    <div class="container-form">
+      <form>
+        <label><strong> Digite seu nome completo: </strong></label>
+        <input type="text" placeholder="Nome Completo">
+
+        <label><strong> Digite seu E-mail: </strong></label>
+        <input type="text" placeholder="E-mail">
+
+        <label><strong> Digite sua Senha: </strong></label>
+        <input type="password" placeholder="Senha">
+
+        <div id ="div-button-form">
+        <button id="button-form" type="submit">Cadastrar</button>
         </div>
-    </main>
+      </form>
+    </div>
+  </main>
 </body>
 
 </html>
