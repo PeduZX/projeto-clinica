@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar Médico | ADM</title>
+    <link rel="icon" href="/logo/logo.png" type="image/png">
+    <link rel="stylesheet" href="/CSS/Cadastros/CadastroMed.css" />
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <span id="span-logo">
+        <img src="/logo/logo-fundo-transparente.svg" alt="LOGO" class="logo" id="logo-nav" />
+      </span>
+      <ul>
+        <li><i style="margin: 5px;" class="ri-home-4-line"></i><a href="/HTML/home.html" class="a-nav">Início</a></li>
+        <li><i style="margin: 5px;" class="ri-shield-cross-line"></i><a href="/HTML/home.html"class="a-nav">Saúde</a></li>
+        <li><i style="margin: 5px;" class="ri-hospital-line"></i><a href="/HTML/home.html"class="a-nav">Especialidades dos médicos</a></li>
+        <li><i style="margin: 5px;" class="ri-service-line"></i><a href="/HTML/home.html"class="a-nav">Serviços e Vacinas</a></li>
+      </ul>
+            <div id="div-botoes">
+                <button class="botoes" onclick="window.location.href='loginCliente.html'">Sou paciente</button>
+                <button class="botoes" onclick="window.location.href='loginADM.html'">Sou ADM</button>
+            </div>
+        </nav>
+    </header>
+
+  <main id="container-principal">
+    <div class="container-form">
+      <form>
+        <h1 id="h1-form">Cadastrar Médico | ADM</h1>
+        <label><strong> Digite seu nome completo: </strong></label>
+        <input type="text" placeholder="Nome Completo" id="input-name" />
+
+        <label><strong> Data de Nascimento: </strong></label>
+        <input type="date" placeholder="Data de Nascimento" id="input-name" />
+
+        <label><strong> Digite seu CPF: </strong></label>
+        <input type="text" placeholder="Digite seu CPF" id="input-name" />
+
+        <label><strong> Digite sua cidade: </strong></label>
+        <input type="text" placeholder="Digite sua cidade" id="input-email" />
+
+        <label><strong> Digite sua Especialidade: </strong></label>
+        <input type="text" placeholder="Especialidade" id="input-email" />
+
+        <label><strong> Numero do Ambulatório referente: </strong></label>
+        <input type="number" placeholder="Ambulatório"  />
+
+        <div id="div-button-form">
+          <button id="button-form" type="submit" onclick="window.location.href='Pgn-Cliente.html'">
+            Cadastrar
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
